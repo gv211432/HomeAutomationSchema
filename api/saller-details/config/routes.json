@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/saller-details",
+      "handler": "saller-details.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/saller-details/count",
+      "handler": "saller-details.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/saller-details/:id",
+      "handler": "saller-details.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/saller-details",
+      "handler": "saller-details.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/saller-details/:id",
+      "handler": "saller-details.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/saller-details/:id",
+      "handler": "saller-details.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

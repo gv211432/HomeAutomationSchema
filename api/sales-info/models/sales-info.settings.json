@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sales_infos",
+  "info": {
+    "name": "salesInfo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "soldAt": {
+      "type": "decimal",
+      "default": 0,
+      "required": true
+    },
+    "addressLine1": {
+      "type": "string",
+      "required": true
+    },
+    "addressLine2": {
+      "type": "string"
+    },
+    "addressLine3": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "biginteger",
+      "required": true,
+      "default": "0000000000"
+    },
+    "cumulativeOrderNo": {
+      "type": "biginteger"
+    },
+    "taxGst": {
+      "type": "float"
+    },
+    "pincode": {
+      "type": "integer",
+      "required": true
+    },
+    "qty": {
+      "type": "integer",
+      "required": true
+    },
+    "device_id_array": {
+      "type": "json"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": false
+    },
+    "accountCreated": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Ref_Seller_Id": {
+      "type": "string",
+      "required": true,
+      "private": true
+    }
+  }
+}

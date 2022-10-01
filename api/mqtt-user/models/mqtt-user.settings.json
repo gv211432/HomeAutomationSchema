@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mqtt_users",
+  "info": {
+    "name": "mqttUser",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "uid",
+      "required": true,
+      "maxLength": 30,
+      "minLength": 6
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "hash": {
+      "type": "richtext",
+      "required": true
+    },
+    "Ref_User_Info": {
+      "type": "string",
+      "required": true,
+      "private": true
+    },
+    "Ref_Credential_Id": {
+      "type": "string",
+      "required": true,
+      "private": true
+    },
+    "mqttDeviceNumber": {
+      "type": "uid",
+      "required": true
+    }
+  }
+}

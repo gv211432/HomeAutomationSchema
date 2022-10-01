@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "userInfo",
+  "info": {
+    "name": "userInfo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hash": {
+      "type": "text",
+      "required": true
+    },
+    "active": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    }
+  }
+}

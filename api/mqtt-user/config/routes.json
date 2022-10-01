@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mqtt-users",
+      "handler": "mqtt-user.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mqtt-users/count",
+      "handler": "mqtt-user.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mqtt-users/:id",
+      "handler": "mqtt-user.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mqtt-users",
+      "handler": "mqtt-user.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mqtt-users/:id",
+      "handler": "mqtt-user.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mqtt-users/:id",
+      "handler": "mqtt-user.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

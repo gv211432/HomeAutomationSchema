@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contactings",
+      "handler": "contacting.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contactings/count",
+      "handler": "contacting.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contactings/:id",
+      "handler": "contacting.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/contactings",
+      "handler": "contacting.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contactings/:id",
+      "handler": "contacting.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contactings/:id",
+      "handler": "contacting.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

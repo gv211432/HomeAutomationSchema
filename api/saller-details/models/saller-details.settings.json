@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saller_details",
+  "info": {
+    "name": "sellerDetails",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "uid",
+      "required": true
+    },
+    "hash": {
+      "type": "text",
+      "required": true
+    },
+    "seller_email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "phone": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "ac_active": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "ac_blocked": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": false
+    }
+  }
+}
